@@ -36,3 +36,8 @@ string[] PrintArray()
     Console.Write("Введите строки через пробел: ");
     return Console.ReadLine().Split(" ");
 }
+
+string[] array = PrintArray();
+string[] result = ReplacingSimbols(array, 3);
+Console.WriteLine($"Вы задали массив из строк: [{string.Join(", ", array)}]");
+Console.WriteLine($"Вот строки длинной до 3х символов из вашего массива: [{string.Join(", ", result)}]");
