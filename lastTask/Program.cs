@@ -31,3 +31,8 @@ string[] ReplacingSimbols(string[] start, int n)
 
     return finish;
 }
+string[] PrintArray()
+{
+    Console.Write("Введите строки через пробел: ");
+    return Console.ReadLine().Split(" ");
+}
