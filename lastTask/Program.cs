@@ -16,3 +16,18 @@ int SearchStringsLessThan3Simbols(string[] start, int n)
 
     return count;
 }
+string[] ReplacingSimbols(string[] start, int n)
+{
+    string[] finish = new string[SearchStringsLessThan3Simbols(start, n)];
+
+    for (int i = 0, j = 0; i < start.Length; i++)
+    {
+        if (start[i].Length <= n)
+        {
+            finish[j] = start[i];
+            j++;
+        }
+    }
+
+    return finish;
+}
